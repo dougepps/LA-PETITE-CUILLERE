@@ -1,17 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubbles, spoons.  You Get it</title>
+    <title>Spoon. Bubbles. You Get It.</title>
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        /* Container for the entire image gallery section */
+        .gallery-container {
+            display: flex; /* Aligns child elements (the figure wrappers) horizontally */
+            justify-content: space-between; /* Distributes space evenly between images */
+            margin: 20px 0; /* Adds spacing above and below the gallery */
+            float: left; /* Allows the following paragraph text to wrap around the gallery */
+            width: 50%; /* Adjust width to control how much text wraps around it */
+            margin-right: 20px; /* Space between the gallery and the wrapping text */
+        }
+
+        /* Styling for each individual image and text wrapper */
+        .image-wrapper {
+            flex: 1; /* Makes each image wrapper grow to fill the container equally */
+            text-align: center; /* Centers the image and caption */
+            padding: 0 5px; /* Adds a small gap between images */
+        }
+
+        /* Styling for the images */
+        .image-wrapper img {
+            max-width: 100%; /* Ensures images are responsive and fit their container */
+            height: auto; /* Maintains the image's aspect ratio */
+            display: block; /* Removes extra space below the image */
+            margin: 0 auto; /* Centers the image within its wrapper */
+        }
+
+        /* Styling for the text above and below the images */
+        .caption-above, .caption-below {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Clear the float so the next content after the wrapping paragraph doesn't flow around it */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </head>
 <body>
-    <!-- Visible content goes here -->
-    <h1>Hello, World!</h1>
-    <p>This is a first paragraph.</p>
+    <h1>Spoons. Bubbles. You Get It.</h1>
+    <div class="gallery-container">
+        <div class="image-wrapper">
+            <div class="caption-above">Spoon</div>
+            <img src="spoon.png" alt="Image 1">
+            <div class="caption-below">(it doesn't really work)</div>
+        </div>
+        <div class="image-wrapper">
+            <div class="caption-above">Bubbles</div>
+            <img src="twoGlasses.jpg" alt="Image 2">
+            <div class="caption-below">Save the bubbles</div>
+        </div>
+        <div class="image-wrapper">
+            <div class="caption-above">Bubbles</div>
+            <img src="notThatBubbles.jpg" alt="Image 3">
+            <div class="caption-below">Also, save Bubbles</div>
+        </div>
+    </div>
 
-    Even The <a href="https://www.youtube.com/watch?v=Sa0c0PyDrWk">Youtube </a>
+    <p>
+        Greetings fellow nerds and nerd-adjacent folks.
+
+If, like me, you've recently learned of "the spoon trick" you must be full of questions.</p>
+   <p> What is the spoon trick you ask ? </p>
+   <p> It's the idea that you put a spoon, really a spoon handle in the neck of your champagne bottle and that saves the bubbles in case you don't drink the whole bottle in one sitting.</p>
+
+<p>If, also like me, you're reasonably lazy, then you aren't going to do your own experiment</p>
+
+   
+    <div class="clearfix"></div> <!-- Used to clear the float for subsequent content -->
+    <p>
+        But you are going to go find a paper (in French!). <a href="Valade_et_al.pdf">Le Mythe de la Petite Cuillere</a> from the good people at the Comité Interprofessionnel du vin de Champagne (Interprofessional Committee of Champagne Wine).
+        Who were nice enough to do the experiments for us in 1994.
+    </p>
+    <p>
+        Then you're going to extract the text and make it a google doc and then auto-translate that to english, <a href="translatedMyth.pdf"> The Myth of the Little Spoon</a>
+
+    </p>
+
+    <p>
+        The upshot is "The pressure drop is of the same order of magnitude whether with or without a teaspoon.the loss is greater than 50% after 48 hours, in both cases"
+    </p>
+
+    <p>
+        Fun fact, the bubble formation "occurs from a potassium bitartrate crystal, a residue of yeast or stirring
+aid, or an imperfection on the glass surface.".  The bubbles come out of solution and need there to be a "heterogeneous induced nucleation".
+    </p>
+
+    <h2>
+        Basically: A small spoon, even a silver one, placed in the neck of a bottle will never stop champagne from
+degassing. </h2>
+<p>From what I can gather the most important thing is to <b>keep it cold</b>. That way the gas never comes out of solution.</p>
+
+<h1> Other interesing sources </h1>
+
+    <p>
+        <a href="https://www.scientificamerican.com/article/sparkling-wine-teaspoon-myth/ ">A Scientific American -- “Fact or Fiction: Does a Spoon in the Bottle Keep Champagne Bubbly?:  A persistent bit of kitchen folklore appears to have little basis in fact”</a>
+
+<p>
+<a href="https://wine-family.com/blogs/news/debunking-the-myth-can-a-silver-spoon-keep-champagne-bubbly?srsltid=AfmBOootTpGiu7fnOAKKa3n26T1z5hrZ5i9DfTGkAEF7RbYIRZuGFBGe
+">Wine-family.com Debunking The Myth: Can A Silver Spoon Keep Champagne Bubbly?</a>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=VdHDtx71PhA">MythBusters</a>
+</p>
+<p>
+<a href="https://youtu.be/Sa0c0PyDrWk?t=196">Some lady</a>
+
+
+    </p>
+
 </body>
 </html>
-
